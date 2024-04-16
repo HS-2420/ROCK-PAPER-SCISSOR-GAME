@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="nav" class="mode">
+        <h1>Rock Paper Scissor Game</h1>
+        <div id="dark-button">
+            <i class="ri-moon-line"></i>
+        </div>
+    </div>
+    <div class="choices">
+        <div class="choice" id="rock"></div>
+        <div class="choice" id="paper"></div>
+        <div class="choice" id="scissor"></div>  
+    </div>
+    <div class="score-board">
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>You</p>
+        </div>
+        <div class="score">
+            <p id="comp-score">0</p>
+            <p>Computer</p>
+        </div>
+        <div class="score">
+            <p id="draw-score">0</p>
+            <p>Draw</p>
+        </div>
+    </div>
+    <div class="msg-container">
+        <p id="msg" class="mode">Play Your Move</p>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

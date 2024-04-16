@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Helvetica;
+    text-align: center;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(247, 247, 209); 
+   }
+#nav{
+    background-color:#081b31;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+}
+#nav h1{
+    margin-left: 5%;
+}
+#dark-button{
+    margin-right: 5%;
+}
+#dark-button i{
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+.choices{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 3rem;
+   margin-top:5%;
+}
+.choice{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+#rock{
+    background-image: url(ROCKobj.png);
+    background-size: cover;
+}
+#paper{
+    background-image: url(PAPERobj.png);
+    background-size: cover;
+}
+#scissor{ 
+    background-image: url(SCISSORobj.png);
+    background-size: cover;
+}
+.choice:hover{
+    opacity: 0.7;
+    cursor: pointer; 
+    background-color: black;
+    box-shadow: 3px 0px 20px 10px rgb(0, 0, 0)
+}
+.score-board{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+#user-score{
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgb(0, 255, 0);
+}
+#comp-score{
+    color: red;
+    font-size: 4rem;
+    font-weight: 700;
+}
+#draw-score{
+    color:#fb60a0;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.msg-container{
+    margin-top: 5rem;
+    display: inline-block;
+}
+#msg{
+    color:white;
+    background-color:  #081b31;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+.dark-mode{
+    background-color: white;
+    color: #081b31;
+}
+.light-mode{
+    background-color: #081b31;
+    color: white;
+}
